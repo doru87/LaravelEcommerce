@@ -6,7 +6,7 @@ use App\Models\Cart;
 use App\Models\Order;
 use App\Models\Order_Product;
 use Stripe\Charge;
-use Stripe\Stripe;
+use Stripe;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use App\Models\Profile;
