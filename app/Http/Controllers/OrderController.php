@@ -12,7 +12,7 @@ use Illuminate\Support\Facades\DB;
 use App\Models\Profile;
 use Illuminate\Support\Facades\Auth;
 
-require_once('../../vendor/stripe-php-master/init.php');
+require_once(realpath($_SERVER["DOCUMENT_ROOT"]).'/vendor/stripe-php-master/init.php');
 
 class OrderController extends Controller
 {
