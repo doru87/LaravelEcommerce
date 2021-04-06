@@ -12,7 +12,7 @@ use Illuminate\Support\Facades\DB;
 use App\Models\Profile;
 use Illuminate\Support\Facades\Auth;
 // require_once('../vendor/autoload.php');
-require_once('vendor/stripe-php/init.php');
+require_once('/vendor/stripe-php/init.php');
 
 class OrderController extends Controller
 {
