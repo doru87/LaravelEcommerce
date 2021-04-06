@@ -12,7 +12,7 @@ use Illuminate\Support\Facades\DB;
 use App\Models\Profile;
 use Illuminate\Support\Facades\Auth;
 // require_once('../vendor/autoload.php');
-require $_SERVER["DOCUMENT_ROOT"].'../vendor/STRIPE~1.0/init.php';
+require '../vendor/STRIPE~1.0/init.php';
 
 class OrderController extends Controller
 {
