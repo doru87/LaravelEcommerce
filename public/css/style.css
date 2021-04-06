@@ -1,0 +1,232 @@
+.navbar {
+    background: #07060c;
+    height: 70px;
+}
+
+.navbar-brand,
+.nav-link {
+    margin-left: 50px;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+}
+
+.slider-image {
+    height: 400px;
+    width: 800px;
+    object-fit: fill;
+}
+
+.products_wrapper {
+    width: 800px;
+}
+.products_list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    align-items: center;
+    gap: 100px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.title_search {
+    margin-left: 100px;
+    margin-top: 50px;
+}
+
+.card-img-top {
+    height: 300px;
+}
+
+.container-parent {
+    background: #e6ede8;
+}
+
+.table-cart {
+    background: #ffffff;
+}
+
+.containerProduct {
+    margin-top: 100px;
+}
+
+.form-row label {
+    color: #060311;
+}
+
+.imageproduct {
+    height: 500px;
+    width: 500px;
+}
+
+.cart-image {
+    width: 100px;
+}
+
+.cart_list {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.input_number {
+    width: 30%;
+    border-color: #362f2f;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.orderButton {
+    float: right;
+}
+
+.dropdown-menu {
+    color: black;
+}
+
+.vertical-menu {
+    background: #362f2f;
+}
+
+li.dropdown ul {
+    display: none;
+}
+ul li {
+    list-style-type: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+ul li a {
+    color: #060311;
+    font-weight: bold;
+}
+
+ul li a:hover {
+    color: #060311;
+}
+
+.card-text {
+    color: #fdfdfd;
+}
+
+.card-body {
+    margin-top: 20px;
+    height: 100px;
+    background: #17141b;
+    border-radius: 5px;
+}
+
+.post-description {
+    margin-left: 140px;
+    margin-top: -30px;
+}
+
+.comment-image {
+    width: 120px;
+    height: 120px;
+    padding: 5px;
+}
+
+.profile {
+    background: #c1c9c3;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.makeorder {
+    color: #060311;
+    font-weight: 600;
+}
+
+body {
+    font-family: Roboto;
+}
+
+footer {
+    background-color: #07060c;
+    padding: 70px 0px;
+}
+
+footer ul li {
+    padding: 5px 0px;
+}
+
+.address span,
+.contact span,
+.social span {
+    color: #fff;
+    font-weight: 800;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    display: block;
+    text-transform: uppercase;
+    font-size: 20px;
+    letter-spacing: 3px;
+}
+
+.address li p,
+.contact li a,
+.social li a {
+    color: #fff;
+    letter-spacing: 2px;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.social li {
+    float: left;
+}
+
+.address,
+.contact,
+.social {
+    list-style: none;
+}
+
+.fa {
+    color: #9c9c9c;
+    margin-right: 15px;
+    font-size: 14px;
+}
+.register-wrapper {
+    height: 800px;
+}
+
+.background-register {
+    background: #c1c9c3;
+}
+
+.background-register label {
+    color: #060311;
+}
+
+.login-wrapper {
+    height: 700px;
+}
+
+.background-login {
+    background: #c1c9c3;
+}
+
+.background-login label {
+    color: #060311;
+}
+
+.profile-wrapper {
+    height: 1000px;
+}
+
+.makeorder-wrapper {
+    height: 800px;
+}
+
+.myorders-wrapper {
+    height: 600px;
+}
+
+.payment_details {
+    display: none;
+}
