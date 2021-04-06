@@ -6,13 +6,13 @@ use App\Models\Cart;
 use App\Models\Order;
 use App\Models\Order_Product;
 use Stripe\Charge;
-// use Stripe\Stripe;
+use Stripe\Stripe;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use App\Models\Profile;
 use Illuminate\Support\Facades\Auth;
-use Cartalyst\Stripe\Stripe;
-// require_once('../vendor/stripe-php-master/init.php');
+
+require_once('../vendor/stripe-php-master/init.php');
 
 class OrderController extends Controller
 {
@@ -60,7 +60,7 @@ class OrderController extends Controller
 
         // Stripe::setApiKey(Config::get('services.stripe.secret_key'));
         // Stripe::setApiKey(env('STRIPE_API_SECRET'));
-        Stripe\Stripe::setApiKey("sk_test_51IDASUGMKwBbdaOBTD50A3cjPW23Bw35rLxlbEHNTDBGSsclvqHjZgOlCYkruzg21PJsYksCohAfx6XKItK5lUng00nxmbiNYA");
+        Stripe::setApiKey("sk_test_51IDASUGMKwBbdaOBTD50A3cjPW23Bw35rLxlbEHNTDBGSsclvqHjZgOlCYkruzg21PJsYksCohAfx6XKItK5lUng00nxmbiNYA");
 
         $charge = Charge::create([
             'amount' => $request->total * 100,
