@@ -60,7 +60,7 @@ class OrderController extends Controller
 
         // Stripe::setApiKey(Config::get('services.stripe.secret_key'));
         // Stripe::setApiKey(env('STRIPE_API_SECRET'));
-        Stripe::setApiKey("sk_test_51IDASUGMKwBbdaOBTD50A3cjPW23Bw35rLxlbEHNTDBGSsclvqHjZgOlCYkruzg21PJsYksCohAfx6XKItK5lUng00nxmbiNYA");
+        \Stripe\Stripe::setApiKey("sk_test_51IDASUGMKwBbdaOBTD50A3cjPW23Bw35rLxlbEHNTDBGSsclvqHjZgOlCYkruzg21PJsYksCohAfx6XKItK5lUng00nxmbiNYA");
 
         $charge = Charge::create([
             'amount' => $request->total * 100,
