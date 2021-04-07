@@ -16,7 +16,7 @@ use Illuminate\Support\Facades\Auth;
 
 
 // require_once('../vendor/autoload.php');
-require '../vendor/STRIPE~1.0/init.php';
+
 
 class OrderController extends Controller
 {
