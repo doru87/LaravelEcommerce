@@ -5,12 +5,16 @@ namespace App\Http\Controllers;
 use App\Models\Cart;
 use App\Models\Order;
 use App\Models\Order_Product;
-use Stripe\Charge;
-use Stripe\Stripe;
+// use Stripe\Charge;
+// use Stripe\Stripe;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use App\Models\Profile;
+use Cartalyst\Stripe\Laravel\Facades\Stripe;
 use Illuminate\Support\Facades\Auth;
+// use Cartalyst\Stripe\Stripe;
+
+
 // require_once('../vendor/autoload.php');
 require '../vendor/STRIPE~1.0/init.php';
 
@@ -60,9 +64,11 @@ class OrderController extends Controller
 
         // Stripe::setApiKey(Config::get('services.stripe.secret_key'));
         // Stripe::setApiKey(env('STRIPE_API_SECRET'));
+
+    
         Stripe::setApiKey("sk_test_51IDASUGMKwBbdaOBTD50A3cjPW23Bw35rLxlbEHNTDBGSsclvqHjZgOlCYkruzg21PJsYksCohAfx6XKItK5lUng00nxmbiNYA");
 
-        $charge = Charge::create([
+        $charge = Stripe::charges()->create([
             'amount' => $request->total * 100,
             'currency' => 'USD',
             'source' => $request->stripeToken,
