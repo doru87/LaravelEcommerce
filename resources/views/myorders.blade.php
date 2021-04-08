@@ -26,11 +26,7 @@
                           </td>
                           <td>{{$order['payment_method']}}</td>
                           <td>{{date('d-m-Y', strtotime($order['created_at']))}}</td>
-                          <td>
-                              @foreach ($order['order_products'] as $product)
-                                <a href="order-details/{{$product['orders_id']}}">Order</a>
-                              @endforeach
-                          </td>
+                          <td><a href="order-details/{{$product['orders_id']}}">Order</a></td>
                         </tr>
                       @endforeach
                   </tbody>
