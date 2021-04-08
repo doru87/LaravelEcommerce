@@ -12,7 +12,7 @@ class MyOrdersController extends Controller
     }
 
     public function displayOrders(){
-        $orders = Order_Product::where('users_id',Session()->get('user')['id'])->get()->toArray();
+        $orders = Order::with('order_products')->where('users_id',Session()->get('user')['id'])->get()->toArray();
             return view('myorders')->with('orders',$orders);
     }
 
