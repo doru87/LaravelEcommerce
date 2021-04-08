@@ -72,7 +72,8 @@ class OrderController extends Controller
             'amount' => $request->total * 100,
             'currency' => 'USD',
             'source' => $request->stripeToken,
-            'description' => 'Order'
+            'description' => 'Order',
+            'receipt_email' => Auth::user()->email,
             
         ]);
   
