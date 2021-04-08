@@ -16,7 +16,7 @@
                     </tr>
                   </thead>
                   <tbody>
-               
+                    {{dd($orders)}}
                       @foreach ($orders as $order)
                         <tr>
                           <td>{{$order['id']}}</td>
