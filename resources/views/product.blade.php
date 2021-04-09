@@ -39,7 +39,7 @@
                                     </div>
                                 @else
                                     <div class="float-left">
-                                        <img src="/storage{{$_SERVER["DOCUMENT_ROOT"]}}/profile_images/{{$profile->email}}/{{$profile->picture}}" class="img-circle avatar comment-image border border-primary mr-3" alt="user profile image">
+                                        <img src="storage{{$_SERVER["DOCUMENT_ROOT"]}}/profile_images/{{$profile->email}}/{{$profile->picture}}" class="img-circle avatar comment-image border border-primary mr-3" alt="user profile image">
                                     </div>
                                 @endif
                             @endif
