@@ -25,7 +25,6 @@ class ProductController extends Controller
     public function productInformation ($id) {
         $product = Products::find($id);
         $profiles = Profile::all();
-        dd($_SERVER["DOCUMENT_ROOT"]);
        return view('product')->with(compact('product','profiles'));
     }
 
