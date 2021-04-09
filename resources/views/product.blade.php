@@ -35,6 +35,7 @@
                             @if ($comment->email == $profile->email)
                                 @if (strpos($profile->picture, 'bootdey') !== false)
                                     <div class="float-left">
+                                        {{dd($_SERVER["DOCUMENT_ROOT"])}}
                                         <img src="{{$profile->picture}}" class="img-circle avatar comment-image border border-primary mr-3" alt="user profile image">
                                     </div>
                                 @else
