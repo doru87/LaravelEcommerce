@@ -14,7 +14,7 @@
                         </div>
                           @else
                           <div class="col-md-3 mb-3">
-                            <img style="width:150px" src="storage/profile_images/{{$email}}/{{$file}}" alt="">
+                            <img style="width:150px" src="/storage/profile_images/{{$email}}/{{$file}}" alt="">
                         </div>
                           @endif
                            
