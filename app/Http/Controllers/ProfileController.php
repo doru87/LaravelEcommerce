@@ -58,7 +58,7 @@ class ProfileController extends Controller
                     $profile->save();
                     $filename = $profile->picture;
                 }
-            $filesInFolder = File::files('../storage/app/public/profile_images/'.$email);  
+            $filesInFolder = File::files('../app/public/profile_images/'.$email);  
 
                 foreach($filesInFolder as $path) { 
                     $file = pathinfo($path);
